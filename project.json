@@ -1,0 +1,23 @@
+{
+  "overview": "A fast, accessible web app that helps users — especially those with low literacy or language barriers — understand medicine labels. Scan, upload, or type label text to get instant AI-powered translations and plain-language summaries in 12+ languages, with emergency alerts and voice read-aloud.",
+  "features": [
+    "Camera capture, image upload, manual text entry, and sample demo mode",
+    "AI translation into 12+ languages in a single fast API call",
+    "7-section plain-language breakdown: Medication Name, Purpose, Dosage, How to Take, Warnings, Side Effects, Storage",
+    "Emergency red-banner alerts for critical keywords like overdose or allergy",
+    "Voice read-aloud with Play, Pause, and Stop controls",
+    "Mobile-first accessible design with large fonts and high-contrast colors",
+    "Performance-optimized: code splitting, lazy loading, minified bundles under 250KB"
+  ],
+  "category": "productivity",
+  "tags": [
+    "healthcare",
+    "translation",
+    "accessibility",
+    "ai",
+    "medicine",
+    "multilingual",
+    "voice"
+  ],
+  "last_updated": "2026-04-15T14:13:26.309Z"
+}

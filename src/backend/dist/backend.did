@@ -1,0 +1,43 @@
+type http_request_result = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type http_header = 
+ record {
+   name: text;
+   value: text;
+ };
+type TransformationOutput = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type TransformationInput = 
+ record {
+   context: blob;
+   response: http_request_result;
+ };
+type ProcessLabelResult = 
+ variant {
+   err: text;
+   ok: MedicineLabelResult;
+ };
+type MedicineLabelResult = 
+ record {
+   dosageInstructions: text;
+   emergencyAlertText: text;
+   hasEmergencyAlert: bool;
+   howToTake: text;
+   medicationName: text;
+   purpose: text;
+   sideEffects: text;
+   storageInstructions: text;
+   warnings: text;
+ };
+service : {
+  processLabel: ("text": text, language: text) -> (ProcessLabelResult);
+  transform: (input: TransformationInput) -> (TransformationOutput) query;
+}
