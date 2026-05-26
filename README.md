@@ -34,7 +34,3 @@ An AI-powered web application that translates and explains medicine labels in si
 
 ---
 
-
-
-# Run development server
-npm run dev
